@@ -1,0 +1,47 @@
+<div class='container'>
+  <div class='border'>
+    <div class='row d-flex justify-content-between m-5'>
+      <div>
+        <h3>Welcome {{name}}</h3>
+      </div>
+      <div>
+        <button class='logout btn btn-info'>LogOut</button>
+      </div>
+    </div>
+
+    <div>
+      <ol class='list-group list-group-numbered'>
+        <li
+          class='list-group-item d-flex justify-content-between align-items-start'
+        >
+          <div class='ms-2 me-auto'>
+            <div class='fw-bold'>Email</div>
+            {{email}}
+          </div>
+
+        </li>
+        <li
+          class='list-group-item d-flex justify-content-between align-items-start'
+        >
+          <div class='ms-2 me-auto'>
+            <div class='fw-bold'>About</div>
+            {{about}}
+          </div>
+
+        </li>
+        <li
+          class='list-group-item d-flex justify-content-between align-items-start'
+        >
+          <div class='ms-2 me-auto'>
+
+            <div class='fw-bold my-3'>Photo</div>
+            <img src='{{photo}}' alt='' />
+          </div>
+
+        </li>
+
+      </ol>
+    </div>
+
+  </div>
+</div>
