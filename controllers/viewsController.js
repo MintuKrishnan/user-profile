@@ -1,6 +1,6 @@
 exports.getLoginForm = (req, res) => {
   if (req.cookies.jwt != 'loggedout' && req.cookies.jwt) {
-    res.redirect('http://localhost:3000/profile');
+    res.redirect('/profile');
     return;
   }
   res.status(200).render('login', {
@@ -9,7 +9,7 @@ exports.getLoginForm = (req, res) => {
 };
 exports.getSignUpForm = (req, res) => {
   if (req.cookies.jwt && req.cookies.jwt != 'loggedout') {
-    res.redirect('http://localhost:3000/profile');
+    res.redirect('/profile');
     return;
   }
   res.status(200).render('signup');
@@ -17,7 +17,7 @@ exports.getSignUpForm = (req, res) => {
 
 exports.home = (req, res) => {
   if (req.cookies.jwt != 'loggedout' && req.cookies.jwt) {
-    res.redirect('http://localhost:3000/profile');
+    res.redirect('/profile');
     return;
   }
   res.status(200).render('home');
