@@ -1,20 +1,53 @@
-<a href="/" class="btn btn-success">Home</a>
-<a href="/signup" class="btn btn-info">SignUp</a>
-<div class="row justify-content-md-center" style="margin-top: 100px">
-    <div class="col-md-6">
+<div class='row mx-auto g-3' style='max-width:600px;'>
+  <div class='col-md-6 d-grid mx-auto'><a
+      href='/'
+      class='btn btn-outline-success'
+    >Home</a></div>
+  <div class='col-md-6 d-grid mx-auto'>
+    <a href='/signup' class='btn btn-outline-primary'>SignUp</a></div>
+</div>
 
-        <form class="login">
-            <div class="form-group ">
-                <label for="exampleInputEmail1">Email address</label>
-                <input id='email' name="email" type="email" class="form-control" placeholder="Enter email">
-            </div>
-            <div class="form-group">
-                <label for="exampleInputPassword1">Password</label>
-                <input id='password' name="password" type="password" class="form-control" placeholder="Password">
-            </div>
-            <button type="submit" class="btn btn-primary">Login</button>
+<div class='row justify-content-md-center mt-5'>
+  <div class='col-md-6'>
 
-        </form>
+    <form class='login border p-4'>
 
-    </div>
+      <div class='text-center'>
+        <h1
+          class='text-center badge bg-danger mt-3 mb-5'
+          style='font-size:1.5rem;'
+        >
+          Login to account
+        </h1>
+      </div>
+      <div class='row g-4'>
+        <div class='col-md-12'>
+          <label class='form-label' for='exampleInputEmail1'>Email address</label>
+          <input
+            id='email'
+            name='email'
+            type='email'
+            class='form-control'
+            placeholder='Enter email'
+          />
+        </div>
+        <div class='col-md-12'>
+          <label class='form-label' for='exampleInputPassword1'>Password</label>
+          <input
+            id='password'
+            name='password'
+            type='password'
+            class='form-control'
+            placeholder='Password'
+          />
+        </div>
+        <div class='col-md-6 d-grid mx-auto'>
+          <button type='submit' class='btn btn-primary'>Login</button>
+        </div>
+
+      </div>
+
+    </form>
+
+  </div>
 </div>

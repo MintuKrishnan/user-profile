@@ -1,4 +1,4 @@
-<div class='container'>
+{{!-- <div class='container'>
   <div class='border'>
     <div class='row d-flex justify-content-between m-5'>
       <div>
@@ -8,42 +8,58 @@
         <button class='logout btn btn-info'>LogOut</button>
       </div>
     </div>
-
-    <div class='row'>
-      <div class='col-sm-8'>
-      
-          <ol class='list-group list-group-numbered'>
-            <li
-              class='list-group-item d-flex justify-content-between align-items-start'
-            >
-              <div class='ms-2 me-auto'>
-                <div class='fw-bold'><h4>Email</h4>
-                  </div>
-                {{email}}
+    <div class='justify-content-md-center'>
+      <div class='row'>
+        <div class='w-100 card mb-3 text-center' style='max-width: 800px;'>
+          <div class='row g-0'>
+            <div class='col-md-4'>
+              <img class='rounded w-100' src='{{photo}}' alt='...' />
+            </div>
+            <div class='col-md-8'>
+              <div class='card-body'>
+                <h5 class='card-title'>{{name}}</h5>
+                <p class='card-text'> {{about}}</p>
+                <p class='card-text'><small class='text-muted'>
+                    {{email}}</small></p>
               </div>
-
-            </li>
-            <li
-              class='list-group-item d-flex justify-content-between align-items-start'
-            >
-              <div class='ms-2 me-auto'>
-                <div class='fw-bold'><h4>About</h4></div>
-                {{about}}
-              </div>
-
-            </li>
-
-          </ol>
-      
+            </div>
+          </div>
+        </div>
       </div>
-      <div class='col-sm-4'>
-        <li class='list-group-item d-flex align-items-right'>
-          <img class='rounded float-right w-100' src='{{photo}}' alt='' />
-        </li>
-      </div>
-  
 
-    {{! <div class='fw-bold my-3'>Photo</div> }}
+    </div>
+
+  </div>
+</div> --}}
+{{! <div class='d-flex'>
+
+</div> }}
+<div class='container border p-4 d-flex flex-column align-items-end'>
+
+  <div class='col-md-2'>
+    <button class='logout btn btn-warning mb-4'>LogOut</button>
+  </div>
+
+  <div class='align-items-center'>
+    <div class='row d-flex'>
+      <div class='col-md-4'>
+        <img class='w-100' src='{{photo}}' alt='...' />
+      </div>
+      <div class='col-md-8'>
+        <div class='d-flex align-items-start flex-column'>
+          <div class='row mx-0 border w-100 my-2'>
+            <h1>{{name}}</h1>
+          </div>
+          <div class='row mx-0 border w-100 mb-2'>
+            <p>{{about}}</p>
+          </div>
+          <div class='row mx-0 border w-100 mb-2'>
+            <p class='text-muted'>{{email}}</p>
+          </div>
+
+        </div>
+      </div>
+    </div>
 
   </div>
 </div>

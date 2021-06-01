@@ -1,76 +1,86 @@
-<a href='/' class='btn btn-success'>Home</a>
-<a href='/login' class='btn btn-info'>Login</a>
-<div class='row justify-content-md-center' style='margin-top: 30px'>
-  <div class='col-md-4'>
+<div class='row mx-auto g-3' style='max-width:600px;'>
+  <div class='col-md-6 d-grid mx-auto'>
+    <a href='/' class='btn btn-outline-success'>Home</a></div>
+  <div class='col-md-6 d-grid mx-auto'>
+    <a href='/login' class='btn btn-outline-primary'>Login</a></div>
 
-    <form class='signup'>
-      <div class='row'>
-        <div class='col'>
+</div>
+<div class='container mt-5' style='max-width:800px;'>
+  <div class='justify-content-md-center'>
 
-          <div class='form-group'>
-            <label for='firstNameInput'> Name</label>
-            <input
-              id='s-name'
-              type='text'
-              class='form-control'
-              id='firstNameInput'
-              placeholder='Enter name'
-              required
-            />
-          </div>
+    <form class='signup border p-4'>
 
-          <div class='form-group'>
-            <label for='emailInput'>Email address</label>
-            <input
-              id='s-email'
-              type='email'
-              class='form-control'
-              id='emailInput'
-              placeholder='Enter email'
-              required
-            />
-          </div>
+      <div class='text-center'>
+        <h1
+          class='text-center badge bg-danger mt-3 mb-5'
+          style='font-size:1.5rem;'
+        >Create an account
+        </h1>
+      </div>
 
-          <div class='form-group'>
-            <label for='passwordInput'>Password</label>
-            <input
-              id='s-password'
-              type='password'
-              class='form-control'
-              id='passwordInput'
-              placeholder='Password'
-              required
-            />
-          </div>
-
-          <div class='form-group'>
-            <label for='confirmPasswordInput'>Confirm Password</label>
-            <input
-              id='s-password-confirm'
-              type='password'
-              class='form-control'
-              id='confirmPasswordInput'
-              placeholder='Re-enter password'
-              required
-            />
-          </div>
+      <div class='row g-3'>
+        <div class='col-md-6'>
+          <label class='form-label' for='firstNameInput'> Name</label>
+          <input
+            id='s-name'
+            type='text'
+            class='form-control'
+            id='firstNameInput'
+            placeholder='Enter name'
+            required
+          />
         </div>
-        <div class='col'>
+        <div class='col-md-6'>
+          <label class='form-label' for='emailInput'>Email address</label>
+          <input
+            id='s-email'
+            type='email'
+            class='form-control'
+            id='emailInput'
+            placeholder='Enter email'
+            required
+          />
+        </div>
 
-          <div class='form-group'>
-            <label for='firstAboutInput'> About</label>
-            <input
-              id='s-about'
-              type='text'
-              class='form-control'
-              id='firstAboutInput'
-              placeholder='Enter about'
-              required
-            />
-          </div>
-          <div class='form-group'>
+        <div class='col-md-6'>
+          <label class='form-label' for='passwordInput'>Password</label>
+          <input
+            id='s-password'
+            type='password'
+            class='form-control'
+            id='passwordInput'
+            placeholder='Password'
+            required
+          />
+        </div>
+        <div class='col-md-6'>
+          <label class='form-label' for='confirmPasswordInput'>Confirm Password</label>
+          <input
+            id='s-password-confirm'
+            type='password'
+            class='form-control'
+            id='confirmPasswordInput'
+            placeholder='Re-enter password'
+            required
+          />
+        </div>
 
-            <label for='photo'> Profile Picture</label>
+        <div class='col-md-6'>
+          <label class='form-label' for='firstAboutInput'> About</label>
+          <input
+            id='s-about'
+            type='text'
+            class='form-control'
+            id='firstAboutInput'
+            placeholder='Enter about'
+            required
+          />
+        </div>
+        <div class='col-md-6'>
+
+          <label class='form-label'> Profile Picture</label>
+          <div class='input-group'>
+
             <input
               class='form-control'
               type='file'
@@ -82,11 +92,14 @@
 
           </div>
 
-          <button type='submit' class='btn btn-primary mt-4'>SignUp</button>
-
         </div>
+        <div class='col-md-6 d-grid mx-auto'>
+          <button type='submit' class='btn btn-primary mt-4'>SignUp</button>
+        </div>
+
       </div>
 
     </form>
+
   </div>
 </div>
